@@ -1,23 +1,33 @@
 def generateSubsets((n,scenario,shuffle=1, verbose=1, pattern=1):
+    class_A=np.zeros((2,n))
+    class_B=np.zeros((2,n))
     #50% each
     if scenario==1:
-        class_A = np.concatenate((np.multiply(np.random.normal(0,1,(1,int(n/2))),sigma_A) +  mu_A[0],np.multiply(np.random.normal(0,1,(1,int(n/2))),sigma_A) +  mu_A[1]))
-        class_B = np.concatenate((np.multiply(np.random.normal(0,1,(1,int(n/2))),sigma_B) +  mu_B[0],np.multiply(np.random.normal(0,1,(1,int(n/2))),sigma_B) +  mu_A[1]))
+
+        class_A[0]= np.concatenate((np.random.randn(1,int(0.25*n))*sigma_A-mu_A[0],np.random.randn(1,int(0.25*n))*sigma_A+mu_A[0]),axis=1)
+        class_B[0]= np.random.randn(1,int(0.5*n))*sigma_B +mu_B[0]
+        class_A[1]= np.random.randn(1,int(0.5*n))*sigma_A +mu_A[1]
+        class_B[1]= np.random.randn(1,int(0.5*n))*sigma_B +mu_B[1]
 
     #50% of A, 100% of B
     if scenario==2:
-        class_A = np.concatenate((np.multiply(np.random.normal(0,1,(1,int(n/2))),sigma_A) +  mu_A[0],np.multiply(np.random.normal(0,1,(1,int(n/2))),sigma_A) +  mu_A[1]))
-        class_B = np.concatenate((np.multiply(np.random.normal(0,1,(1,n)),sigma_B) +  mu_B[0],np.multiply(np.random.normal(0,1,(1,n)),sigma_B) +  mu_A[1]))
+        class_A[0]= np.concatenate((np.random.randn(1,int(0.25*n))*sigma_A-mu_A[0],np.random.randn(1,int(0.25*n))*sigma_A+mu_A[0]),axis=1)
+        class_B[0]= np.random.randn(1,n)*sigma_B +mu_B[0]
+        class_A[1]= np.random.randn(1,int(0.5*n))*sigma_A +mu_A[1]
+        class_B[1]= np.random.randn(1,n)*sigma_B +mu_B[1]
 
     #50% of B, 100% of A
     if scenario==3:
-        class_A = np.concatenate((np.multiply(np.random.normal(0,1,(1,int(n))),sigma_A) +  mu_A[0],np.multiply(np.random.normal(0,1,(1,int(n))),sigma_A) +  mu_A[1]))
-        class_B = np.concatenate((np.multiply(np.random.normal(0,1,(1,int(n/2))),sigma_B) +  mu_B[0],np.multiply(np.random.normal(0,1,(1,int(n/2))),sigma_B) +  mu_A[1]))
+        class_A[0]= np.concatenate((np.random.randn(1,int(0.5*n))*sigma_A-mu_A[0],np.random.randn(1,int(0.5*n))*sigma_A+mu_A[0]),axis=1)
+        class_B[0]= np.random.randn(1,int(0.5*n))*sigma_B +mu_B[0]
+        class_A[1]= np.random.randn(1,n)*sigma_A +mu_A[1]
+        class_B[1]= np.random.randn(1,int(0.5*n))*sigma_B +mu_B[1]
 
     #20% 80% and stuff
     if scenario==4:
-        class_A = np.concatenate((np.multiply(np.random.normal(0,1,(1,n)),sigma_A) +  mu_A[0],np.multiply(np.random.normal(0,1,(1,n)),sigma_A) +  mu_A[1]))
-        class_B = np.concatenate((np.multiply(np.random.normal(0,1,(1,n)),sigma_B) +  mu_B[0],np.multiply(np.random.normal(0,1,(1,n)),sigma_B) +  mu_A[1]))
+        class_A[0]= np.concatenate((np.random.randn(1,int(0.5*n))*sigma_A-mu_A[0],np.random.randn(1,int(0.5*n))*sigma_A+mu_A[0]),axis=1)
+        class_A[1]= np.random.randn(1,n)*sigma_A +mu_A[1]
+
         c_a = np.zeros((2,20))
         c_b = np.zeros((2,80))
         #print(class_A.shape)
