@@ -1,27 +1,27 @@
-Skårman Carl-Erik
+SkÃ¥rman Carl-Erik
 Romanus Gabriel
 Odenberg Mikael
-Järrel Henrik S
+JÃ¤rrel Henrik S
 Lindgren Sylvia
 Ask Beatrice
 Hoffmann Ulla
 Nordlander Inger
 Ruwaida Yvonne
-Könberg Bo
+KÃ¶nberg Bo
 Attefall Stefan
 Agenberg Tomas
 Papadopoulos Nikos
-Lilliehöök Anna
+LilliehÃ¶Ã¶k Anna
 Ohly Lars
-Höij Helena
+HÃ¶ij Helena
 Larsson Kalle
 Narti Ana Maria
 Nordquist Kaj
 Rojas Mauricio
 Hassan Maria
 Adelsohn Liljeroth Lena
-Vestlund Börje
-Carlsson i Tyresö Gunilla
+Vestlund BÃ¶rje
+Carlsson i TyresÃ¶ Gunilla
 Frans Joe
 Sabuni Nyamko
 Palm Veronica
@@ -33,11 +33,11 @@ Johansson Jan Emanuel
 Schyman Gudrun
 Lejon Britta
 Odell Mats
-Lennmarker Göran
+Lennmarker GÃ¶ran
 Davidson Inger
-Hamilton Björn
+Hamilton BjÃ¶rn
 Reinfeldt Fredrik
-Pilsäter Karin
+PilsÃ¤ter Karin
 Rask Ola
 Lindberg Niclas
 Arvidsson Eva
@@ -46,44 +46,44 @@ Moberg Carina
 Axelsson Christina
 de Pourbaix-Lundin Marietta
 Svensson Ingvar
-Elmsäter-Svärd Catharina
+ElmsÃ¤ter-SvÃ¤rd Catharina
 Beiming Cinnika
 Waidelich Tommy
 Westman Henrik
 Bargholtz Helena
-Ångström Lars
+Ã…ngstrÃ¶m Lars
 Einarsson Mats
 Kerimo Yilmaz
-Enström Karin
+EnstrÃ¶m Karin
 Hamilton Carl B
-Andrén Gunnar
-Özürküt Sermin
+AndrÃ©n Gunnar
+Ã–zÃ¼rkÃ¼t Sermin
 Lundgren Kerstin
-Lundström Nina
-Björling Ewa
-Engström Hillevi
+LundstrÃ¶m Nina
+BjÃ¶rling Ewa
+EngstrÃ¶m Hillevi
 Valtersson Mikaela
 Andreasson Martin
-Franzén Mia
+FranzÃ©n Mia
 Damberg Mikael
 Hedquist Lennart
 Burman Ingrid
 Stenmark Rigmor
-Tingsgård Tone
+TingsgÃ¥rd Tone
 Bill Per
 Tesfazion Rezene
 Berglind Mats
 Oscarsson Mikael
-Domeij Åsa
+Domeij Ã…sa
 Gille Agneta
-Wikström Cecilia
+WikstrÃ¶m Cecilia
 Ullenhag Erik
 Westerberg Per
 Furustrand Reynoldh
 Hagberg Michael
 Bjurling Laila
-Markström Elisebeht
-von der Esch Björn
+MarkstrÃ¶m Elisebeht
+von der Esch BjÃ¶rn
 Olovsson Fredrik
 Ericson Gunvor G
 Linna Elina
@@ -92,34 +92,34 @@ Tiefensee Roger
 Hagfeldt Stefan
 Karlsson Sonia
 Danestig Britt-Marie
-Öhman Conny
-Sköldestig Berndt
+Ã–hman Conny
+SkÃ¶ldestig Berndt
 Hillar Rosenqvist Helena
 Andersson Yvonne
 Danielsson Staffan
-Axén Gunnar
+AxÃ©n Gunnar
 Ludvigsson Anne
 Brus Sven
 Lindgren Anna
-Darell Linnéa
+Darell LinnÃ©a
 Gustafsson Billy
-Malmström Louise
-Löfstrand Johan
+MalmstrÃ¶m Louise
+LÃ¶fstrand Johan
 Granbom Karin
 Andersson Magdalena
 Svensson Alf
-Hägglund Göran
+HÃ¤gglund GÃ¶ran
 Nilsson Martin
 Sandgren Margareta
-Åström Alice
-Hägg Carina
+Ã…strÃ¶m Alice
+HÃ¤gg Carina
 Andersson Margareta
-Wahlström Göte
+WahlstrÃ¶m GÃ¶te
 Larsson Maria
 Petersson Helene
 Johansson Bengt-Anders
 Krantz Tobias
-Högmark Anders G
+HÃ¶gmark Anders G
 Erlandsson Eskil
 Eneroth Tomas
 Wegendal Lars
@@ -127,18 +127,18 @@ Adolfsson Elgestam Carina
 Sandahl Olle
 Nordmark Gunnar
 Hansson Agne
-Pålsson Chatrine
-Örnfjäder Krister
+PÃ¥lsson Chatrine
+Ã–rnfjÃ¤der Krister
 Aurelius Nils Fredrik
 Beijer Lennart
 Ringman Agneta
-Fagerström Ann-Marie
-Juholt Håkan
-Thorén Sverker
+FagerstrÃ¶m Ann-Marie
+Juholt HÃ¥kan
+ThorÃ©n Sverker
 Virgin Lilian
-Grönhagen Carina
+GrÃ¶nhagen Carina
 Skoog Christer
-Björkman Jan
+BjÃ¶rkman Jan
 Johnsson Jeppe
 Gylling Johnny
 Berg Heli
@@ -147,22 +147,22 @@ Larsson Hillevi
 Astudillo Luciano
 Granlund Marie
 Lindkvist Britt-Marie
-Lundström Sten
+LundstrÃ¶m Sten
 Jakobsson Leif
 Roslund Carl-Axel
 Widman Allan
-Billström Tobias
+BillstrÃ¶m Tobias
 Nilsson Annika
 Lantz Kenneth
 Husmark Pehrsson Cristina
 Karlsson Anders
-Härstedt Kent
+HÃ¤rstedt Kent
 Stafilidis Tasso
 Hagberg Christin
 Acketoft Tina
 Strandberg Torkild
 Danielsson Peter
-Jönsson Anita
+JÃ¶nsson Anita
 Olander Ronny
 Persson Catherine
 Bernhardsson Bo
@@ -170,104 +170,104 @@ Nilsson Ulf
 Svensson Smith Karin
 Jarl Beck Inger
 Lindblad Lars
-Thalén Finné Ewa
+ThalÃ©n FinnÃ© Ewa
 Althin Peter
-Pålsson Anne-Marie
+PÃ¥lsson Anne-Marie
 Wahlgren Marie
 Holm Ulf
 Linander Johan
 Ekendahl Maud
-Skånberg Tuve
+SkÃ¥nberg Tuve
 Wester Ulla
-Sjöstrand Sven-Erik
+SjÃ¶strand Sven-Erik
 Bengtsson Anders
 Nylander Christer
 Engle Kerstin
 Ericson Lars-Ivar
-Pålsson Margareta
-Persson i Simrishamn Göran
+PÃ¥lsson Margareta
+Persson i Simrishamn GÃ¶ran
 Adelsbo Christer
 Eriksson Alf
-Westerlund Panke Majléne
-Sahlberg Pär Axel
+Westerlund Panke MajlÃ©ne
+Sahlberg PÃ¤r Axel
 Hoff Hans
 Kollmats Lennart
 Karlsson Kjell-Erik
 Gustafsson Lars
 Ertsborn Jan
-Brodén Anne Marie
+BrodÃ©n Anne Marie
 Andersson Jan
 von Sydow Henrik
-Carlström Marianne
+CarlstrÃ¶m Marianne
 Bager Erling
 Olsson Rolf
-Brandin Claes-Göran
+Brandin Claes-GÃ¶ran
 Flyborg Eva
 Wittgren-Ahl Siw
-Lindblad Göran
-Sidén Anita
-Jóhannesson Berit
+Lindblad GÃ¶ran
+SidÃ©n Anita
+JÃ³hannesson Berit
 Landgren Per
 Magnusson Cecilia
 Roxbergh Claes
 Enochson Annelie
-Lindén Rolf
+LindÃ©n Rolf
 Johansson Lars
 Carlsson i Hisings Backa Gunilla
-Wigström Cecilia
+WigstrÃ¶m Cecilia
 Darvik Axel
 Nilsson Lennart
-Bäckström Lars
-René Inger
+BÃ¤ckstrÃ¶m Lars
+RenÃ© Inger
 Olsson Kent
 Berglund Nilsson Mona
 Runegrund Rosita
-Torstensson Åsa
+Torstensson Ã…sa
 Larsson Jan-Olof
 Aronson Marita
-Jönsson Mona
+JÃ¶nsson Mona
 Tysklind Lars
-Bråkenhielm Catharina
+BrÃ¥kenhielm Catharina
 Forslund Kenneth G
 Bohlin Olsson Britt
 Feltzing Barbro
-Söderqvist Nils-Erik
-Nyström Elizabeth
-Vänerlöv Ingemar
+SÃ¶derqvist Nils-Erik
+NystrÃ¶m Elizabeth
+VÃ¤nerlÃ¶v Ingemar
 Nenes Christina
 Dinamarca Rossana
-Brodén Anita
+BrodÃ©n Anita
 Jonsson Peter
 Qarlsson Annika
-Kjörnsberg Arne
+KjÃ¶rnsberg Arne
 Ekholm Berndt
 Fransson Sonja
-Ekström Anne-Marie
+EkstrÃ¶m Anne-Marie
 Lindgren Else-Marie
-Sjösten Ulf
-Västerteg Claes
-Nordström Kjell
+SjÃ¶sten Ulf
+VÃ¤sterteg Claes
+NordstrÃ¶m Kjell
 Carlsson Birgitta
 Gustafsson Holger
 Rosengren Per
 Green Monica
 Ahlin Urban
 Ohlsson Carina
-Winbäck Christer
+WinbÃ¤ck Christer
 Widegren Cecilia
 Lander Jarl
 Johansson Ann-Kristine
-Engström Marie
+EngstrÃ¶m Marie
 Pettersson Marina
 Gerdin Viviann
 Patriksson Runar
-Kihlström Dan
-Rådhström Jan-Evert
-Björnlod Leif
+KihlstrÃ¶m Dan
+RÃ¥dhstrÃ¶m Jan-Evert
+BjÃ¶rnlod Leif
 Ternemar Tommy
-Högman Berit
+HÃ¶gman Berit
 Lundberg Inger
-Holmqvist Nils-Göran
+Holmqvist Nils-GÃ¶ran
 Frisk Helena
 Tolgfors Sten
 Pedersen Peter
@@ -277,73 +277,73 @@ Larsen Sofia
 Axelsson Lennart
 Persson Sven Gunnar
 Ernkrans Matilda
-Magnusson Göran
+Magnusson GÃ¶ran
 Israelsson Margareta
 Heinemann Kerstin
-Högström Tomas
+HÃ¶gstrÃ¶m Tomas
 Nilsson Pia
 Ytterberg Mariann
 Vallius Paavo
-Johansson Jörgen
+Johansson JÃ¶rgen
 Thorborg Karin
-Lindström Torsten
-Granström Per Erik
+LindstrÃ¶m Torsten
+GranstrÃ¶m Per Erik
 Hietala Nordlund Barbro
 Gunnarsson Rolf
 Fremling Lennart
 Johansson Kenneth
 Lindholm Jan
 Ulvskog Marita
-Kvarnström Kurt
+KvarnstrÃ¶m Kurt
 Wiklund Anders
 Lindgren Ulrik
-Särnblad Anneli
+SÃ¤rnblad Anneli
 Bohlin Sinikka
 Norinder Patrik
-Högström Kenth
+HÃ¶gstrÃ¶m Kenth
 Hellberg Owe
-Bergström Sven
-Pärssinen Raimo
+BergstrÃ¶m Sven
+PÃ¤rssinen Raimo
 Svensson Per-Olof
 Marcelind Ragnwi
-Hedström Lotta
-Lindestam Åsa
+HedstrÃ¶m Lotta
+Lindestam Ã…sa
 Backman Hans
 Stenberg Hans
 Lundberg Agneta
 Eberstein Susanne
 Kristiansson Karlstedt Kerstin
-Norlander Göran
-Sellén Birgitta
-Wahlén Gunilla
-Lindén Lars
+Norlander GÃ¶ran
+SellÃ©n Birgitta
+WahlÃ©n Gunilla
+LindÃ©n Lars
 Hellquist Solveig
 Kjellberg Bertil
 Sandberg Gunnar
 Berglund Rune
-Nordén Marie
+NordÃ©n Marie
 Sundell Ola
-Sköld Jansson Camilla
-Larsson Håkan
+SkÃ¶ld Jansson Camilla
+Larsson HÃ¥kan
 Lundberg Carin
-Rådström Britta
+RÃ¥dstrÃ¶m Britta
 Lilja Lars
 Gustavsson Lennart
-Ångström Yvonne
+Ã…ngstrÃ¶m Yvonne
 Abramsson Karl Gustav
 Tjernberg Gunilla
-Löfgren Ulla
+LÃ¶fgren Ulla
 Saarinen Ingegerd
-Wibe Sören
+Wibe SÃ¶ren
 Olofsson Maud
 Klockare Lennart
 Zakrisson Kristina
 Ahlqvist Birgitta
 Holma Siv
 Eriksson Peter
-Wälivaara Erling
-Åström Karin
+WÃ¤livaara Erling
+Ã…strÃ¶m Karin
 Gidblom Birgitta
-Öberg Maria
+Ã–berg Maria
 Hammarbergh Krister
-Grönlund Krantz Anna
+GrÃ¶nlund Krantz Anna
