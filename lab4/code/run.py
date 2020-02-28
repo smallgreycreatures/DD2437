@@ -20,7 +20,7 @@ if __name__ == "__main__":
                                      batch_size=20
     )
 
-    rbm.cd1(visible_trainset=train_imgs, n_iterations=10)
+    #rbm.cd1(visible_trainset=train_imgs, n_iterations=1)
 
     ''' deep- belief net '''
 
@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     ''' greedy layer-wise training '''
 
-    dbn.train_greedylayerwise(vis_trainset=train_imgs, lbl_trainset=train_lbls, n_iterations=2000)
+    dbn.train_greedylayerwise(vis_trainset=train_imgs, lbl_trainset=train_lbls, n_iterations=1)
 
     dbn.recognize(train_imgs, train_lbls)
 

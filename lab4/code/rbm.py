@@ -55,10 +55,10 @@ class RestrictedBoltzmannMachine():
 
         self.momentum = 0.7
 
-        self.print_period = 100
+        self.print_period = 10
 
         self.rf = { # receptive-fields. Only applicable when visible layer is input data
-            "period" : 1000, # iteration period to visualize
+            "period" : 10, # iteration period to visualize
             "grid" : [5,5], # size of the grid
             "ids" : np.random.randint(0,self.ndim_hidden,25) # pick some random hidden units
             }
@@ -99,15 +99,15 @@ class RestrictedBoltzmannMachine():
                 self.update_params(v_0,h_0,p_v_1,p_h_1)
                 # visualize once in a while when visible layer is input images
 
-                if it % self.rf["period"] == 0 and self.is_bottom and start ==0:
+                #if it % self.rf["period"] == 0 and self.is_bottom:
 
-                    viz_rf(weights=self.weight_vh[:,self.rf["ids"]].reshape((self.image_size[0],self.image_size[1],-1)), it=it, grid=self.rf["grid"])
+                #    viz_rf(weights=self.weight_vh[:,self.rf["ids"]].reshape((self.image_size[0],self.image_size[1],-1)), it=it, grid=self.rf["grid"])
 
                 # print progress
 
                 #if it % self.print_period == 0 :
-
-                print ("iteration=%7d recon_loss=%4.4f"%(it, (1/self.batch_size)*np.linalg.norm(np.sum(v_0,axis=0) - np.sum(v_1,axis=0))))
+                #We measure on the visible layer V
+                #print ("iteration=%7d recon_loss=%4.4f"%(it, (1/self.batch_size)*np.linalg.norm(np.sum(v_0,axis=0) - np.sum(v_1,axis=0))))
 
         return
 
@@ -200,7 +200,22 @@ class RestrictedBoltzmannMachine():
             # [TODO TASK 4.1] compute probabilities and activations (samples from probabilities) of visible layer (replace the pass below). \
             # Note that this section can also be postponed until TASK 4.2, since in this task, stand-alone RBMs do not contain labels in visible layer.
 
-            pass
+            #compute total input
+            support = self.bias_v+np.matmul(hidden_minibatch,self.weight_vh.T)
+            ordinary_batch = support[:,:-self.n_labels]
+            label_batch = support[:,-self.n_labels:]
+            #print(ordinary_batch.shape)
+            #print(label_batch.shape)
+
+            p_ord = sigmoid(ordinary_batch)
+            v_ord = sample_binary(p_ord)
+
+            p_lab = softmax(label_batch)
+            v_lab = sample_binary(p_lab)
+            #print(p_ord.shape)
+            #print(p_lab.shape)
+            p = np.concatenate((p_ord,p_lab),axis=1)
+            v = np.concatenate((v_ord,v_lab), axis=1)
 
         else:
 
@@ -223,6 +238,7 @@ class RestrictedBoltzmannMachine():
 
         self.weight_v_to_h = np.copy( self.weight_vh )
         self.weight_h_to_v = np.copy( np.transpose(self.weight_vh) )
+        print("untwine weights ", self.weight_h_to_v.shape)
         self.weight_vh = None
 
     def get_h_given_v_dir(self,visible_minibatch):
@@ -243,8 +259,9 @@ class RestrictedBoltzmannMachine():
         n_samples = visible_minibatch.shape[0]
 
         # [TODO TASK 4.2] perform same computation as the function 'get_h_given_v' but with directed connections (replace the zeros below)
-
-        return np.zeros((n_samples,self.ndim_hidden)), np.zeros((n_samples,self.ndim_hidden))
+        p = sigmoid(self.bias_h+np.matmul(visible_minibatch,self.weight_v_to_h))
+        h = sample_binary(p)
+        return p, h
 
 
     def get_v_given_h_dir(self,hidden_minibatch):
@@ -278,15 +295,14 @@ class RestrictedBoltzmannMachine():
             # this case should never be executed : when the RBM is a part of a DBN and is at the top, it will have not have directed connections.
             # Appropriate code here is to raise an error (replace pass below)
 
-            pass
+            raise NameError('This should not be able to happen. Get your shit straight!')
 
         else:
 
-            # [TODO TASK 4.2] performs same computaton as the function 'get_v_given_h' but with directed connections (replace the pass and zeros below)
+            p = sigmoid(self.bias_v+np.matmul(hidden_minibatch,self.weight_h_to_v.T))
+            v = sample_binary(p)
 
-            pass
-
-        return np.zeros((n_samples,self.ndim_visible)), np.zeros((n_samples,self.ndim_visible))
+        return p, v
 
     def update_generate_params(self,inps,trgs,preds):
 
