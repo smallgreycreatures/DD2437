@@ -107,7 +107,7 @@ class RestrictedBoltzmannMachine():
 
                 #if it % self.print_period == 0 :
                 #We measure on the visible layer V
-                #print ("iteration=%7d recon_loss=%4.4f"%(it, (1/self.batch_size)*np.linalg.norm(np.sum(v_0,axis=0) - np.sum(v_1,axis=0))))
+                print ("iteration=%7d recon_loss=%4.4f"%(it, (1/self.batch_size)*np.linalg.norm(np.sum(v_0,axis=0) - np.sum(v_1,axis=0))))
 
         return
 
@@ -299,7 +299,7 @@ class RestrictedBoltzmannMachine():
 
         else:
 
-            p = sigmoid(self.bias_v+np.matmul(hidden_minibatch,self.weight_h_to_v.T))
+            p = sigmoid(self.bias_v+np.matmul(hidden_minibatch,self.weight_h_to_v))
             v = sample_binary(p)
 
         return p, v

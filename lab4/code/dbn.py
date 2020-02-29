@@ -77,15 +77,15 @@ class DeepBeliefNet():
         print(lbl.shape)
         #stack the labels corresponding to the image
         v = np.concatenate((pen,lbl),axis=1)
-        print(v.shape)
+        print("v shape",v.shape)
         for i in range(self.n_gibbs_recog):
 
 
             h = self.rbm_stack['pen+lbl--top'].get_h_given_v(v)[1]
             v = self.rbm_stack['pen+lbl--top'].get_v_given_h(h)[1]
-            
-        predicted_lbl = v
 
+        predicted_lbl = v[:,-lbl.shape[1]:]
+        print("pred label shape",predicted_lbl.shape)
         print ("accuracy = %.2f%%"%(100.*np.mean(np.argmax(predicted_lbl,axis=1)==np.argmax(true_lbl,axis=1))))
 
         return
@@ -110,10 +110,21 @@ class DeepBeliefNet():
 
         # [TODO TASK 4.2] fix the label in the label layer and run alternating Gibbs sampling in the top RBM. From the top RBM, drive the network \
         # top to the bottom visible layer (replace 'vis' from random to your generated visible layer).
+        print("true_lbl shape",true_lbl.shape)
+        v = np.random.rand(1,500)
+        v_lbl = np.concatenate((v,lbl),axis=1)
+        #print(v.shape)
 
-        for _ in range(self.n_gibbs_gener):
+        for i in range(self.n_gibbs_gener):
 
-            vis = np.random.rand(n_sample,self.sizes["vis"])
+
+            h = self.rbm_stack['pen+lbl--top'].get_h_given_v(v_lbl)[1]
+            #print("h shape",h.shape)
+            v_lbl = self.rbm_stack['pen+lbl--top'].get_v_given_h(h)[1]
+            #print("v shape",v.shape)
+            v = v_lbl[:,:500]
+            pen = self.rbm_stack['hid--pen'].get_v_given_h_dir(v)[1]
+            vis = self.rbm_stack['vis--hid'].get_v_given_h_dir(pen)[1]
 
             records.append( [ ax.imshow(vis.reshape(self.image_size), cmap="bwr", vmin=0, vmax=1, animated=True, interpolation=None) ] )
 
