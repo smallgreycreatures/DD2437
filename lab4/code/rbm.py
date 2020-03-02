@@ -211,7 +211,7 @@ class RestrictedBoltzmannMachine():
             v_ord = sample_binary(p_ord)
 
             p_lab = softmax(label_batch)
-            v_lab = sample_binary(p_lab)
+            v_lab = sample_categorical(p_lab)
             #print(p_ord.shape)
             #print(p_lab.shape)
             p = np.concatenate((p_ord,p_lab),axis=1)
