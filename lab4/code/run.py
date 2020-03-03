@@ -38,7 +38,7 @@ if __name__ == "__main__":
     """
     print("recognize 1")
     #dbn.recognize(train_imgs, train_lbls)
-    print("recognize 2")
+    #print("recognize 2")
     #dbn.recognize(test_imgs, test_lbls)
     print("generate 1")
 
@@ -55,9 +55,10 @@ if __name__ == "__main__":
 
     dbn.recognize(train_imgs, train_lbls)
 
+    print('Recognize test set...')
     dbn.recognize(test_imgs, test_lbls)
-
-    for digit in range(10):
-        digit_1hot = np.zeros(shape=(1,10))
-        digit_1hot[0,digit] = 1
-        dbn.generate(digit_1hot, name="dbn")
+    #
+    # for digit in range(10):
+    #     digit_1hot = np.zeros(shape=(1,10))
+    #     digit_1hot[0,digit] = 1
+    #     dbn.generate(digit_1hot, name="dbn")
