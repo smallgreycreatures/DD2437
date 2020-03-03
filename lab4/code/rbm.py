@@ -327,13 +327,6 @@ class RestrictedBoltzmannMachine():
         """
 
         # [TODO TASK 4.3] find the gradients from the arguments (replace the 0s below) and update the weight and bias parameters.
-<<<<<<< HEAD
-        #print("inps",inps.shape)
-        #print("preds",preds.shape)
-        #print("trgs",trgs.shape)
-        self.delta_weight_h_to_v = self.learning_rate*np.matmul(inps.T,(trgs-preds))
-        self.delta_bias_v = np.mean(trgs-preds,axis=0)
-=======
 
         # print('inps.shape: ',inps.shape)
         # print('trgs.shape: ',trgs.shape)
@@ -341,7 +334,6 @@ class RestrictedBoltzmannMachine():
 
         self.delta_weight_h_to_v = self.learning_rate*np.dot(inps.T,(trgs-preds))
         self.delta_bias_v = self.learning_rate*np.mean(trgs-preds,axis=0)
->>>>>>> 5dd10fa2a62372fead97daa62316c0cf50217974
 
         self.weight_h_to_v += self.delta_weight_h_to_v
         self.bias_v += self.delta_bias_v
@@ -361,13 +353,8 @@ class RestrictedBoltzmannMachine():
 
         # [TODO TASK 4.3] find the gradients from the arguments (replace the 0s below) and update the weight and bias parameters.
 
-<<<<<<< HEAD
-        self.delta_weight_v_to_h = self.learning_rate*np.matmul(inps.T,(trgs-preds))
-        self.delta_bias_h = np.mean(trgs-preds,axis=0)
-=======
         self.delta_weight_v_to_h = self.learning_rate*np.dot(inps.T,(trgs-preds))
         self.delta_bias_h = self.learning_rate*np.mean(trgs-preds,axis=0)
->>>>>>> 5dd10fa2a62372fead97daa62316c0cf50217974
 
         self.weight_v_to_h += self.delta_weight_v_to_h
         self.bias_h += self.delta_bias_h
