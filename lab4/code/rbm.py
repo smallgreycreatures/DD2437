@@ -78,11 +78,18 @@ class RestrictedBoltzmannMachine():
         print ("learning CD1")
 
         n_samples = visible_trainset.shape[0]
-
+        iter_error = np.zeros(n_iterations)
         for it in range(n_iterations):
             print("iteration=",it)
 	    # [TODO TASK 4.1] run k=1 alternating Gibbs sampling : v_0 -> h_0 ->  v_1 -> h_1.
+            #print(self.batch_size)
+            #print(n_samples)
+            batch_error = np.zeros(int(n_samples/self.batch_size))
+            #print(int(self.batch_size/n_samples))
+            #print(batch_error.shape)
+            i = 0
             for start in range(0,n_samples,self.batch_size):
+
                 end = min(start + self.batch_size, n_samples)
                 #print(start)
                 #print(n_samples)
@@ -99,16 +106,20 @@ class RestrictedBoltzmannMachine():
                 self.update_params(v_0,h_0,p_v_1,p_h_1)
                 # visualize once in a while when visible layer is input images
 
-                #if it % self.rf["period"] == 0 and self.is_bottom:
+                if it == 20 or it == 40 and self.is_bottom:
 
-                #    viz_rf(weights=self.weight_vh[:,self.rf["ids"]].reshape((self.image_size[0],self.image_size[1],-1)), it=it, grid=self.rf["grid"])
+                    viz_rf(weights=self.weight_vh[:,self.rf["ids"]].reshape((self.image_size[0],self.image_size[1],-1)), it=it, grid=self.rf["grid"])
 
                 # print progress
 
                 #if it % self.print_period == 0 :
                 #We measure on the visible layer V
-                print ("iteration=%7d recon_loss=%4.4f"%(it, (1/self.batch_size)*np.linalg.norm(np.sum(v_0,axis=0) - np.sum(v_1,axis=0))))
-
+                error = 1/self.batch_size*np.linalg.norm(np.sum(v_0,axis=0) - np.sum(v_1,axis=0))
+                #print ("iteration=%7d recon_loss=%4.4f"%(it, error))
+                batch_error[i] = error
+                i+=1
+            iter_error[it] = np.mean(batch_error)
+        print(iter_error)
         return
 
 
@@ -316,9 +327,11 @@ class RestrictedBoltzmannMachine():
         """
 
         # [TODO TASK 4.3] find the gradients from the arguments (replace the 0s below) and update the weight and bias parameters.
-
-        self.delta_weight_h_to_v += 0
-        self.delta_bias_v += 0
+        #print("inps",inps.shape)
+        #print("preds",preds.shape)
+        #print("trgs",trgs.shape)
+        self.delta_weight_h_to_v = self.learning_rate*np.matmul(inps.T,(trgs-preds))
+        self.delta_bias_v = np.mean(trgs-preds,axis=0)
 
         self.weight_h_to_v += self.delta_weight_h_to_v
         self.bias_v += self.delta_bias_v
@@ -338,8 +351,8 @@ class RestrictedBoltzmannMachine():
 
         # [TODO TASK 4.3] find the gradients from the arguments (replace the 0s below) and update the weight and bias parameters.
 
-        self.delta_weight_v_to_h += 0
-        self.delta_bias_h += 0
+        self.delta_weight_v_to_h = self.learning_rate*np.matmul(inps.T,(trgs-preds))
+        self.delta_bias_h = np.mean(trgs-preds,axis=0)
 
         self.weight_v_to_h += self.delta_weight_v_to_h
         self.bias_h += self.delta_bias_h
