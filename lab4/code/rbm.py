@@ -106,9 +106,9 @@ class RestrictedBoltzmannMachine():
                 self.update_params(v_0,h_0,p_v_1,p_h_1)
                 # visualize once in a while when visible layer is input images
 
-                if it == 20 or it == 40 and self.is_bottom:
+                #if it == 20 or it == 900 and self.is_bottom:
 
-                    viz_rf(weights=self.weight_vh[:,self.rf["ids"]].reshape((self.image_size[0],self.image_size[1],-1)), it=it, grid=self.rf["grid"])
+                #    viz_rf(weights=self.weight_vh[:,self.rf["ids"]].reshape((self.image_size[0],self.image_size[1],-1)), it=it, grid=self.rf["grid"])
 
                 # print progress
 
@@ -144,7 +144,7 @@ class RestrictedBoltzmannMachine():
         N = v_0.shape[0]
         self.delta_bias_v = self.learning_rate*1/N*(np.sum(v_0,axis=0)-np.sum(v_k,axis=0))
         #print(self.delta_bias_v.shape)
-        self.delta_weight_vh = self.learning_rate*1/N*(np.matmul(v_0.T,h_0) -np.matmul(v_k.T,h_k))
+        self.delta_weight_vh = self.learning_rate/self.batch_size*1/N*(np.matmul(v_0.T,h_0) -np.matmul(v_k.T,h_k))
         self.delta_bias_h = self.learning_rate*1/N*(np.sum(h_0,axis=0)-np.sum(h_k,axis=0))
         #print(self.bias_v.shape)
         #print(self.weight_vh.shape)

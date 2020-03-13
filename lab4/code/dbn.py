@@ -116,10 +116,10 @@ class DeepBeliefNet():
         v = np.random.binomial(1,0.5,size=(1,500))
         v_lbl = np.concatenate((pen,lbl),axis=1)
         #print(v.shape)
-        for i in range(self.n_gibbs_gener):
-            h = self.rbm_stack['pen+lbl--top'].get_h_given_v(v_lbl)[1]
-            #print("h shape",h.shape)
-            v_lbl = self.rbm_stack['pen+lbl--top'].get_v_given_h(h)[1]
+        #for i in range(self.n_gibbs_gener):
+        #    h = self.rbm_stack['pen+lbl--top'].get_h_given_v(v_lbl)[1]
+        #    #print("h shape",h.shape)
+        #    v_lbl = self.rbm_stack['pen+lbl--top'].get_v_given_h(h)[1]
 
 
         for i in range(self.n_gibbs_gener):

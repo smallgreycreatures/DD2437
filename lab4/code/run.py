@@ -35,7 +35,7 @@ if __name__ == "__main__":
     ''' greedy layer-wise training '''
 
     dbn.train_greedylayerwise(vis_trainset=train_imgs, lbl_trainset=train_lbls, n_iterations=20)
-    """
+
     print("recognize 1")
     #dbn.recognize(train_imgs, train_lbls)
     #print("recognize 2")
@@ -57,6 +57,7 @@ if __name__ == "__main__":
 
     print('Recognize test set...')
     dbn.recognize(test_imgs, test_lbls)
+    """
     #
     # for digit in range(10):
     #     digit_1hot = np.zeros(shape=(1,10))
